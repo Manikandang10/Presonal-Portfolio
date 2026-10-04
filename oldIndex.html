@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presonal Portfolio</title>
+    <link rel="stylesheet" href="CSS/oldmain.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- NavBar -->
+     <!-- Less than 991px -->
+    <nav class="sticky-top py-1 d-lg-none">
+        <aside class="container d-flex justify-content-between">
+            <h2 class=" fs-5 ps-3 pt-2 fw-bolder">Portfolio</h2>
+            <div>
+                <a onclick="menu()"><i class="bi bi-list three" id="slas"></i></a>
+            </div>
+        </aside>
+    </nav>
+    <div class="d-none sidemenu" id="sidemeni">
+        <a href="#Home1" class="sd">Home</a>
+        <a href="#skills1" class="sd">Skills</a>
+        <a href="#About1" class="sd">About</a>
+        <a href="#Project1" class="sd">Projects</a>
+        <a href="#contac1" class="sd">Contact Me</a>
+    </div>
+
+    <!-- // More than 991px; -->
+    <nav class="sticky-top py-1 d-none d-lg-block">
+        <aside class="container-md d-flex px-sm-5 justify-content-between">
+            <!-- <h2 class="d-block d-sm-none fs-5 py-sm-1 pt-2 fw-bolder">Portfolio</h2> -->
+            <h2 class="d-none d-sm-block fs-2 py-sm-1 fw-bolder">Portfolio </h2>
+            <div class="py-sm-2 py-1 fs-5 d-flex">
+                <a href="#Home1" class="px-3 t fw-bold text-decoration-none">Home</a>
+                <a href="#skills1" class="px-3 t fw-bold text-decoration-none">Skills</a>
+                <a href="#About1" class="px-3 t fw-bold text-decoration-none">About</a>
+                <a href="#Project1" class="px-3 t fw-bold text-decoration-none">Projects</a>
+                <a href="#" onclick="Close()" class="px-3 t fw-bold text-decoration-none"
+                    id="contact">Contact</a>
+            </div>
+        </aside>
+    </nav>
+    <!-- End NavBar -->
+
+    <!-- formStart -->
+    <div class="w hide fade" id="contact-form">
+        <i class='bx bx-x' id="close" onclick="Close1()"></i>
+        <form action="">
+            <p>
+                <label for="fn" class="form-label">FirstName<span class="start">*</span></label>
+                <input type="text" class="form-control mt-1" id="fn">
+            </p>
+            <p>
+                <label for="ln">LastName<span class="start">*</span></label>
+                <input type="text" class="form-control mt-1" id="ln">
+            </p>
+            <p>
+                <label for="en">Email<span class="start">*</span></label>
+                <input type="email" class="form-control mt-1" id="en">
+            </p>
+            <p>
+                <label for="sn">Subject<span class="start">*</span></label>
+                <input type="text" class="form-control mt-1" id="sn">
+            </p>
+            <p>
+                <label for="mn">Message<span class="start">*</span></label>
+                <textarea id="mn" rows="2" class="form-control mt-1"></textarea>
+            </p>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <!-- FormEnd -->
+
+    <!-- Main Page -->
+    <section class="py-5" id="Home1">
+        <div class="container"  data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="100"
+        data-aos-offset="0" >
+            <article class="row flex-md-column-revers">
+                <aside class="col-12 px-4 col-sm-12 col-lg-6 p-md-5 d-flex align-items-center">
+                    <div id="e" class="text-justify">
+                        <h3>Hello, It's Me</h3>
+                        <h1 class="text-danger fw-bold ">Manikandan G</h1>
+                        <h3>And I'm a <span id="role" class="text-danger fw-bold">Full Stack Developer</span></h3>
+                        <p class="fs-5">I'm a <span id="span" class="text-danger fw-bold fs-5">Java Full
+                                Stack Developer</span> who loves to create beautiful and
+                            functional websites for
+                            people who want to make a
+                            difference in the world.
+                            Currently I'm doing my masters in DR.MGR educational and research institute, where I'm
+                            learning how
+                            to
+                            create beautiful and functional websites using HTML, CSS, JavaScript.</p>
+                    </div>
+                </aside>
+                <aside class="col-12 m-auto col-sm-12 col-lg-6 ">
+                    <div class="p-5">
+                        <img src="Images/my.jpg" class=" img-fluid round1" alt="">
+                    </div>
+                </aside>
+            </article>
+        </div>
+    </section>
+    <!-- End Main Page -->
+
+    <!-- Skill Page -->
+    <section id="skills1">
+        <div class="container " >
+            <div class="d-flex justify-content-center ed pt-5">
+                <h2 class="w-100 text-center fw-bolder border skill">Skills</h2>
+            </div>
+            <div class="row w-100  py-5" >
+                <div class="col-11 col-lg-5 mt-5 opacity-50 fe-skills" data-aos="zoom-out">
+                    <div class="row">
+                        <h3 class="text-decoration-underline fs-3 fw-bolder">FrontEnd</h3>
+                    </div>
+                    <aside class="d-flex ms w-100 ">
+                        <div class="p-2 m-1 borde flex-grow-1 flex-md-grow-1 flex-sm-grow-1">
+                            <i class='bx bxl-html5 ' style="color: #c95d2c;"></i>
+                            <p class="d-inline">HTML</p>
+                        </div>
+                        <div class="p-2 m-1 borde flex-grow-1 flex-md-grow-1 flex-sm-grow-1">
+                            <i class='bx bxl-css3' style="color: #2595e5;"></i>
+                            <p class="d-inline">Css</p>
+                        </div>
+                        <div class="p-2 m-1 borde flex-grow-1 flex-md-grow-1 flex-sm-grow-1">
+                            <i class='bx bxl-javascript' style="color: #e9d928;"></i>
+                            <p class="d-inline">JavaScript</p>
+                        </div>
+                        <div class="p-2  m-1 borde flex-grow-1 flex-md-grow-1 flex-sm-grow-1">
+                            <i class='bx bxl-angular' style="color: #f3b311;"></i>
+                            <p class="d-inline">AngulatJS</p>
+                        </div>
+                        <div class="p-2 m-1 borde flex-grow-1 flex-md-grow-1 flex-sm-grow-1">
+                            <i class='bx bxl-react' style="color: #18afeb;"></i>
+                            <p class="d-inline">React</p>
+                        </div>
+                        <div class="p-2 m-1 borde flex-grow-1 flex-md-grow-1 flex-sm-grow-1">
+                            <i class=' bx bxl-bootstrap' style="color: #180595;"></i>
+                            <p class="d-inline">Bootstrap</p>
+                        </div>
+                        <div class="p-2 m-1 borde flex-grow-1 flex-md-grow-1 flex-sm-grow-1">
+                            <i class='bx bxl-tailwind-css' style="color: #f3b311;"></i>
+                            <p class="d-inline">Tailwind</p>
+                        </div>
+                    </aside>
+                </div>
+
+                <div class="col-11 col-lg-5 mt-5 fe-skills" data-aos="zoom-out-down">
+                    <div class="row">
+                        <h3 class="text-decoration-underline fs-3 fw-bolder">BackEnd</h3>
+                    </div>
+                    <aside class="d-flex ms w-100">
+                        <div class="p-2 m-1 borde flex-grow-1 flex-md-grow-1 flex-sm-grow-1">
+                            <i class='bx bxl-java d-inline' style="color: #f9f4f2;"></i>
+                            <p class="d-inline">Java</p>
+                        </div>
+                        <div class="p-2 m-1 borde flex-grow-1 flex-md-grow-1 flex-sm-grow-1">
+                            <i class='d-inline bx bxl-java' style="color: #6fb5e7;"></i>
+                            <p class="d-inline">J2EE</p>
+                        </div>
+                        <div class="p-2 m-1 borde flex-grow-1 flex-md-grow-1 flex-sm-grow-1">
+                            <i class='d-inline bx bxl-python' style="color: #e9d928;"></i>
+                            <p class="d-inline">Pyhton</p>
+                        </div>
+                        <div class="p-2 m-1 borde flex-grow-1 flex-md-grow-1 flex-sm-grow-1">
+                            <i class='d-inline bx bxl-spring-boot' style="color: #f3b311;"></i>
+                            <p class="d-inline">Spring Boot</p>
+                        </div>
+                        <div class="p-2 m-1 borde flex-grow-1 flex-md-grow-1 flex-sm-grow-1">
+                            <i class='d-inline bx bxs-data' style="color: #18afeb;"></i>
+                            <p class="d-inline">MS-SQL</p>
+                        </div>
+                        <div class="p-2 m-1 borde flex-grow-1 flex-md-grow-1 flex-sm-grow-1">
+                            <i class='d-inline bx pe-1' style="color: #180595;">.C</i>
+                            <p class="d-inline p">C#</p>
+                        </div>
+                        <div class="p-2 m-1 borde flex-grow-1 flex-md-grow-1 flex-sm-grow-1">
+                            <i class='bx bxl-tailwind-css' style="color: #f3b311;"></i>
+                            <p class="d-inline">ASP.Net</p>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+            <div class="row w-100 align-self-center justify-content-center pe-lg-4 pb-5" data-aos="fade-zoom-in">
+                <div class="col-11 col-lg-6 align-items-center mt-3  fe-skills">
+                    <div class="row">
+                        <h3 class="text-decoration-underline fs-3 fw-bolder">Tools</h3>
+                    </div>
+                    <aside class="d-flex ms w-100 ">
+                        <div class="p-2 m-1 borde flex-grow-1 s flex-sm-grow-1 flex-md-grow-1">
+                            <i class='bx bx-code-block' style="color: #c95d2c;"></i>
+                            <p class="d-inline">Eclipse</p>
+                        </div>
+                        <div class="p-2 m-1 borde flex-grow-1 s flex-md-grow-1 flex-sm-grow-1">
+                            <i class='bx bxs-bug-alt' style="color: #c723cc;"></i>
+                            <p class="d-inline">Visual Studio code</p>
+                        </div>
+                        <div class="p-2 m-1 borde flex-grow-1 s lex-md-grow-1 flex-sm-grow-1">
+                            <i class='bx bx-cross' style="color: #e9d928;"></i>
+                            <p class="d-inline">Visual Studio 2022</p>
+                        </div>
+                        <div class="p-2  m-1 borde flex-grow-1 s flex-md-grow-1 flex-sm-grow-1">
+                            <i class='bx bxl-git' style="color: #f3b311;"></i>
+                            <p class="d-inline">Git</p>
+                        </div>
+                        <div class="p-2 m-1 borde flex-grow-1 s flex-md-grow-1 flex-sm-grow-1">
+                            <i class='bx bxl-github' style="color: #e29911;"></i>
+                            <p class="d-inline">GitHub</p>
+                        </div>
+                        <div class="p-2 m-1 borde flex-grow-1 s flex-md-grow-1 flex-sm-grow-1">
+                            <i class=' bx bxs-tree-alt' style="color: #d4e556;"></i>
+                            <p class="d-inline">Spring Tool</p>
+                        </div>
+                        <div class="p-2 m-1 borde flex-grow-1 s flex-md-grow-1 flex-sm-grow-1">
+                            <i class='bx bxl-tailwind-css' style="color: #f3b311;"></i>
+                            <p class="d-inline">Notepad++</p>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Skill Page -->
+
+    <!-- About Start -->
+    <section class="py-5" id="About1">
+        <article class="container py-5">
+            <div class="row">
+                <h3 class="text-center ed my-5 fs-1 pb-3 fw-bolder">About Me</h3>
+                <div class="col-md-4 col-11">
+                    <img src="Images/my2.jpg" class="img-fluid mx-3 mx-md-0 my-4 round2 " alt="">
+                    <p class="w-100 x pt-4">
+                        I am a passionate software developer focused on building scalable web applications. I thrive on
+                        solving complex problems and love contributing to open-source projects. Always eager to learn
+                        and explore new technologies, I enjoy sharing insights with the developer community.
+                    </p>
+                </div>
+                <!-- <div class="col">
+
+                </div> -->
+                <div class="col-11 col-md-7 m-auto m-md-0">
+                    <div class="ms-md-5 my-md-5 my-3 d-flex flex-column flex-xl-row d-lg-flex ">
+                        <img src="Images/mgr.jpeg" class="img-fluid rounded flex-grow-1 flex-md-grow-0" alt="">
+                        <p class="ps-xl-3 pt-3 pt-lg-0 m-md-0 pt-sm-0"><strong>Dr.MGR.Educational And Research
+                                Institute
+                            </strong> <br>
+                            Chennai. <br><br>
+                            <strong>CGPA :</strong>8.7 <br> PassedOut :<strong>2022-2024</strong><br> Degree :
+                            <strong>MCA</strong>
+                        </p>
+                    </div>
+                    <div class="ms-md-5 my-md-5 my-3 d-flex flex-column flex-xl-row d-lg-flex ">
+                        <img src="Images/egs.jpeg" class="img-fluid rounded flex-grow-1 flex-md-grow-0" alt="">
+                        <p class="ps-xl-3 pt-3 pt-lg-0 m-md-0 pt-sm-0"><strong>Edayathangudy G.S. Pillay Arts &
+                                Science College</strong> <br>
+                            Nagapattinam<br> <br>
+                            <strong>CGPA :</strong>8.5 <br> PassedOut :<strong>2019-2022</strong><br> Degree :
+                            <strong>BCA</strong>
+                        </p>
+                    </div>
+                    <div class="ms-md-5 my-md-5 my-3 d-flex flex-column flex-xl-row d-lg-flex ">
+                        <img src="Images/sch.jpeg" class="img-fluid rounded flex-grow-1 flex-md-grow-0" alt="">
+                        <p class="ps-xl-3 pt-3 pt-lg-0 m-md-0 pt-sm-0">Al-Aman Matric HR.Sec school <br>
+                            Sankaranpandhal <br><br>
+                            <strong>10th-(2017)
+                            </strong><br><strong> 12th-(2019)</strong>
+                    </div>
+                    <div class="ms-md-5 my-md-5 my-3 d-flex flex-column flex-xl-row d-lg-flex ">
+                        <img src="Images/acc.jpeg" class="img-fluid rounded flex-grow-1 flex-md-grow-0" alt="">
+                        <p class="ps-xl-3 pt-3 pt-lg-0 m-md-0 pt-sm-0">Accord Info Matrix <br>Chennai <br>
+                            <br><strong>--Java Full Stack
+                            </strong><br><strong>--DotNet Full Stack</strong>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <!-- About End -->
+
+    <!-- Project Start -->
+    <section class="py-4" id="Project1">
+        <div class="container">
+            <h2 class="text-center pb-3 fs-1 fw-bolder text-danger ed">Projects</h2>
+            <article class="row justify-content-center mt-5 justify-content-md-center">
+                <div class="col-10 col-md-5 col-lg-3 hov" data-aos="zoom-out-right">
+                    <div class="card ch">
+                        <img src="Images/sp.png" class="img-fluid rounded" alt="">
+                        <p class="mt-2 mx-2"><span class="mx-1 px-2  rounded text-white p-1 ht">HTML</span> <span
+                                class="mx-1 px-2 rounded text-white p-1 cs">CSS</span></p>
+                        <div class="card-body p">
+                            <div class="card-title tit">Spices Shop</div>
+                            <p class="text-justify">A spice shop website using only HTML and CSS is a simple static
+                                webpage
+                                HTML is used for structuring the content.Included
+                                since HTML and CSS are used,making it ideal for beginners learning web design
+                                basics.
+                            </p>
+                            <a href="" class="text-danger link">Link..</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 col-md-5 col-lg-3 hov" data-aos="zoom-out-down">
+                    <div class="card ch">
+                        <img src="Images/bus.jpeg" class="img-fluid rounded" alt="">
+                        <p class="mt-2 mx-2"><span class="mx-1 px-2 rounded text-white p-1 ja">Java</span> <span
+                                class="mx-1 px-2 rounded text-white p-1 ms1">Mysql</span></p>
+                        <div class="card-body p">
+                            <div class="card-title tit">Bus Reservation </div>
+                            <p>A bus reservation system in the console allows users to book seats on a bus. Users enter
+                                details like name, choose a bus, pick their seat, and confirm the booking. It displays
+                                available buses, seats, and provides booking status.
+                                <br>
+                            </p>
+                            <a href="" class="text-danger link">Link..</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 col-md-5 col-lg-3 hov" data-aos="zoom-out-up">
+                    <div class="card ch">
+                        <img src="Images/new.png" class="img-fluid rounded" alt="">
+                        <p class="mt-2 mx-2"><span class="mx-1 p-1 px-2  rounded text-white ht">HTML</span> <span
+                                class="mx-1 p-1 px-2 rounded text-white cs">CSS</span><span
+                                class="mx-1 px-2 bg-primary rounded text-white p-1 b ">Bootstrap</span><span
+                                class="mx-1 px-2 rounded text-white p-1 ja">JavaScript</span></p>
+                        <div class="card-body p">
+                            <div class="card-title tit">Presonal Portfoli</div>
+                            <p>This website is fully developed using HTML, JavaScript, CSS, and Bootstrap. It is a
+                                dynamic,
+                                fully responsive design that provides information about me and my journey. <br><br><br>
+                            </p>
+                            <a href="" class="text-danger link">Link..</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+    <!-- End Project  -->
+
+    <!-- Start Contact Form -->
+    <section>
+        <div class="container">
+            <article class="row justify-content-md-center  justify-content-center py-5">
+                <h1 class=" my-5 text-center fw-bolder ed text-danger">Contact Me</h1>
+                <aside class="col-10 col-lg-5 mt-0 bg-whit">
+                    <div class="page">
+                        <div class=" linked" data-aos="zoom-in-left" data-aos-delay="200">
+                            <a href=""><i class='bx bxl-instagram'></i></a>
+                            <p class="d-inline">Instagram</p>
+                        </div>
+                        <div class="linked" data-aos="zoom-in-right" data-aos-delay="200">
+                            <a href=""><i class='bx bxl-gmail'></i></a>
+                            <p class="d-inline">Email</p>
+                        </div>
+                        <div class="linked" data-aos="zoom-in-left"data-aos-delay="200">
+                            <a href=""><i class='bx bxl-facebook'></i></a>
+                            <p class="d-inline">FaceBook</p>
+                        </div>
+                        <div class="linked" data-aos="zoom-in-right"data-aos-delay="200">
+                            <a href=""><i class='bx bxl-linkedin'></i></a>
+                            <p class="d-inline">LinkedIn</p>
+                        </div>
+                        <div class="linked" data-aos="zoom-in-left"data-aos-delay="200">
+                            <a href=""><i class='bx bx-chat'></i></a>
+                            <p class="d-inline">Naukri</p>
+                        </div>
+                        <div class="linked" data-aos="zoom-in-right"data-aos-delay="200">
+                            <a href=""><i class='bx bxl-github'></i></a>
+                            <p class="d-inline">GitHub</p>
+                        </div>
+                    </div>
+                </aside>
+                <aside class=" col-lg-5 col-10 mt-4 bg-white rounded"  id="contac1" data-aos="fade-down"
+                data-aos-duration="1000">
+                    <div class=" page2" >
+                    <form onsubmit="return submit()" >
+                        <p>
+                            <label for="fn1" class="form-label">FirstName<span class="start">*</span></label>
+                            <input type="text" class="form-control" onkeyup="first()" name="" id="fn1">
+                            <span id="form-firstname" class="formspan"></span>
+                        </p>
+                        <p>
+                            <label for="ln1" class="form-label">LastName<span class="start">*</span></label>
+                            <input type="text" class="form-control" onkeyup="last()" id="ln1">
+                            <span id="form-lastname" class="formspan"></span>
+                        </p>
+                        <p>
+                            <label for="en1" class="form-label">Email<span class="start">*</span></label>
+                            <input type="email" class="form-control" onkeyup="email()" id="en1">
+                            <span id="form-Email" class="formspan"></span>
+                        </p>
+                        <p>
+                            <label for="sub1" class="form-label">Subject<span class="start">*</span></label>
+                            <input type="text" class="form-control" onkeyup="subject()" id="sub1">
+                            <span id="form-subject" class="formspan"></span>
+                        </p>
+                        <p>
+                            <label for="txt" class="form-label">Message<span class="start"></span></label>
+                            <textarea id="txt" class="form-control" id="msg" onkeyup="msg()"></textarea>
+                            <span id="form-msg" class="formspan"></span>
+                        </p>
+                        <button class="btn btn-primary">Submit</button>
+                    </form>
+        </div>
+        </aside>
+        </article>
+        </div>
+    </section>
+    <!-- End Contact Form -->
+
+    <!-- Footer Start -->
+    <footer class="p-2">
+        <div class="col">
+            <h4><span> &copy </span>Copyright-2024</h4>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+</body>
+<script src="Js/oldmain.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+</html>

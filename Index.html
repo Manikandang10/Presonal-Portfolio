@@ -1,435 +1,1181 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Presonal Portfolio</title>
-    <link rel="stylesheet" href="CSS/main.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Manikandan - Associate Software Engineer specializing in Java, Spring MVC, Spring Boot, SQL and Backend Development.">
+
+    <meta name="keywords"
+          content="Manikandan, Java Developer, Spring Boot Developer, Backend Developer, Software Engineer, Chennai">
+
+    <meta name="author" content="Manikandan">
+
+    <title>Manikandan | Software Engineer</title>
+
+    <link rel="icon"
+          href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3EM%3C/text%3E%3C/svg%3E">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
     <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <!-- NavBar -->
-     <!-- Less than 991px -->
-    <nav class="sticky-top py-1 d-lg-none">
-        <aside class="container d-flex justify-content-between">
-            <h2 class=" fs-5 ps-3 pt-2 fw-bolder">Portfolio</h2>
-            <div>
-                <a onclick="menu()"><i class="bi bi-list three" id="slas"></i></a>
-            </div>
-        </aside>
-    </nav>
-    <div class="d-none sidemenu" id="sidemeni">
-        <a href="#Home1" class="sd">Home</a>
-        <a href="#skills1" class="sd">Skills</a>
-        <a href="#About1" class="sd">About</a>
-        <a href="#Project1" class="sd">Projects</a>
-        <a href="#contac1" class="sd">Contact Me</a>
+
+<!-- =========================================================
+     BACKGROUND
+========================================================= -->
+
+<div class="background-grid"></div>
+
+<div class="glow glow-one"></div>
+<div class="glow glow-two"></div>
+
+
+<!-- =========================================================
+     NAVBAR
+========================================================= -->
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+        <a href="#home" class="logo">
+            <span>&lt;</span>MG<span>/&gt;</span>
+        </a>
+
+        <nav id="navMenu">
+
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
+            <a href="/oldIndex.html" class="nav-link"><i>v1</i></a>
+
+        </nav>
+
+        <a href="/assets/Manikandan Software Developer.pdf"
+           target="_blank"
+           class="nav-resume">
+
+            Resume
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+        </a>
+
+        <button class="menu-btn" id="menuBtn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
     </div>
 
-    <!-- // More than 991px; -->
-    <nav class="sticky-top py-1 d-none d-lg-block">
-        <aside class="container-md d-flex px-sm-5 justify-content-between">
-            <!-- <h2 class="d-block d-sm-none fs-5 py-sm-1 pt-2 fw-bolder">Portfolio</h2> -->
-            <h2 class="d-none d-sm-block fs-2 py-sm-1 fw-bolder">Portfolio </h2>
-            <div class="py-sm-2 py-1 fs-5 d-flex">
-                <a href="#Home1" class="px-3 t fw-bold text-decoration-none">Home</a>
-                <a href="#skills1" class="px-3 t fw-bold text-decoration-none">Skills</a>
-                <a href="#About1" class="px-3 t fw-bold text-decoration-none">About</a>
-                <a href="#Project1" class="px-3 t fw-bold text-decoration-none">Projects</a>
-                <a href="#" onclick="Close()" class="px-3 t fw-bold text-decoration-none"
-                    id="contact">Contact</a>
-            </div>
-        </aside>
-    </nav>
-    <!-- End NavBar -->
+</header>
 
-    <!-- formStart -->
-    <div class="w hide fade" id="contact-form">
-        <i class='bx bx-x' id="close" onclick="Close1()"></i>
-        <form action="">
-            <p>
-                <label for="fn" class="form-label">FirstName<span class="start">*</span></label>
-                <input type="text" class="form-control mt-1" id="fn">
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<main>
+
+<section class="hero section" id="home">
+
+    <div class="hero-content">
+
+        <div class="hero-left">
+
+            <div class="status-pill">
+
+                <span class="status-dot"></span>
+
+                Available for opportunities
+
+            </div>
+
+
+            <p class="hero-small">
+                Hello, I'm
             </p>
-            <p>
-                <label for="ln">LastName<span class="start">*</span></label>
-                <input type="text" class="form-control mt-1" id="ln">
+
+
+            <h1>
+                Manikandan
+                <span class="gradient-text">G.</span>
+            </h1>
+
+
+            <div class="hero-role">
+
+                <span class="role-prefix">I build</span>
+
+                <span id="typingText"></span>
+
+                <span class="typing-cursor">|</span>
+
+            </div>
+
+
+            <p class="hero-description">
+
+                Associate Software Engineer focused on building reliable
+                backend applications using Java, Spring, SQL and enterprise
+                technologies.
+
+                I enjoy solving real-world business problems through
+                clean and maintainable software.
+
             </p>
-            <p>
-                <label for="en">Email<span class="start">*</span></label>
-                <input type="email" class="form-control mt-1" id="en">
-            </p>
-            <p>
-                <label for="sn">Subject<span class="start">*</span></label>
-                <input type="text" class="form-control mt-1" id="sn">
-            </p>
-            <p>
-                <label for="mn">Message<span class="start">*</span></label>
-                <textarea id="mn" rows="2" class="form-control mt-1"></textarea>
-            </p>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+
+
+            <div class="hero-buttons">
+
+                <a href="#projects" class="btn btn-primary">
+
+                    View My Work
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+
+                <a href="/assets/Manikandan Software Developer.pdf"
+                   target="_blank"
+                   class="btn btn-secondary">
+
+                    <i class="fa-solid fa-file-arrow-down"></i>
+
+                    Resume
+
+                </a>
+
+            </div>
+
+
+            <div class="social-links">
+
+                <a href="https://github.com/Manikandang10"
+                   target="_blank"
+                   aria-label="GitHub">
+
+                    <i class="fa-brands fa-github"></i>
+
+                </a>
+
+                <a href="https://www.linkedin.com/in/manikandan-sde"
+                   target="_blank"
+                   aria-label="LinkedIn">
+
+                    <i class="fa-brands fa-linkedin-in"></i>
+
+                </a>
+
+                <a href="mailto:manikandand.sde@gmail.com"
+                   aria-label="Email">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- CODE VISUAL -->
+
+        <div class="hero-right">
+
+            <div class="terminal">
+
+                <div class="terminal-header">
+
+                    <div class="terminal-dots">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </div>
+
+                    <span class="terminal-title">
+                        backend.java
+                    </span>
+
+                </div>
+
+
+                <div class="terminal-body">
+
+<pre><code><span class="keyword">public class</span> <span class="class-name">Developer</span> {
+
+    <span class="keyword">private</span> String role =
+        <span class="string">"Software Engineer"</span>;
+
+    <span class="keyword">private</span> String[] stack = {
+
+        <span class="string">"Java"</span>,
+        <span class="string">"Spring"</span>,
+        <span class="string">"SQL"</span>,
+        <span class="string">"REST API"</span>
+        <span class="string">"Spring Security"</span>
+
+    };
+
+    <span class="keyword">public</span> String build() {
+
+        <span class="keyword">return</span>
+            <span class="string">"Reliable Software"</span>;
+
+    }
+}</code></pre>
+
+                </div>
+
+                <div class="terminal-status">
+
+                    <span class="live-dot"></span>
+
+                    system.status = ONLINE
+
+                </div>
+
+            </div>
+
+
+            <div class="floating-tech tech-java">
+                <i class="fa-brands fa-java"></i>
+                Java
+            </div>
+
+            <div class="floating-tech tech-spring">
+                <i class="fa-solid fa-leaf"></i>
+                Spring
+            </div>
+
+            <div class="floating-tech tech-sql">
+                <i class="fa-solid fa-database"></i>
+                SQL
+            </div>
+
+        </div>
+
     </div>
-    <!-- FormEnd -->
 
-    <!-- Main Page -->
-    <section class="py-5" id="Home1">
-        <div class="container"  data-aos="fade-zoom-in"
-        data-aos-easing="ease-in-back"
-        data-aos-delay="100"
-        data-aos-offset="0" >
-            <article class="row flex-md-column-revers">
-                <aside class="col-12 px-4 col-sm-12 col-lg-6 p-md-5 d-flex align-items-center">
-                    <div id="e" class="text-justify">
-                        <h3>Hello, It's Me</h3>
-                        <h1 class="text-danger fw-bold ">Manikandan G</h1>
-                        <h3>And I'm a <span id="role" class="text-danger fw-bold">Full Stack Developer</span></h3>
-                        <p class="fs-5">I'm a <span id="span" class="text-danger fw-bold fs-5">Java Full
-                                Stack Developer</span> who loves to create beautiful and
-                            functional websites for
-                            people who want to make a
-                            difference in the world.
-                            Currently I'm doing my masters in DR.MGR educational and research institute, where I'm
-                            learning how
-                            to
-                            create beautiful and functional websites using HTML, CSS, JavaScript.</p>
-                    </div>
-                </aside>
-                <aside class="col-12 m-auto col-sm-12 col-lg-6 ">
-                    <div class="p-5">
-                        <img src="Images/my.jpg" class=" img-fluid round1" alt="">
-                    </div>
-                </aside>
-            </article>
+
+    <div class="scroll-indicator">
+
+        <span>SCROLL TO EXPLORE</span>
+
+        <i class="fa-solid fa-arrow-down"></i>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     ABOUT
+========================================================= -->
+
+<section class="section" id="about">
+
+    <div class="section-heading">
+
+        <span class="section-number">01</span>
+
+        <div>
+            <p class="section-label">ABOUT ME</p>
+
+            <h2>
+                Building software with
+                <span class="gradient-text">purpose.</span>
+            </h2>
         </div>
-    </section>
-    <!-- End Main Page -->
 
-    <!-- Skill Page -->
-    <section id="skills1">
-        <div class="container " >
-            <div class="d-flex justify-content-center ed pt-5">
-                <h2 class="w-100 text-center fw-bolder border skill">Skills</h2>
-            </div>
-            <div class="row w-100  py-5" >
-                <div class="col-11 col-lg-5 mt-5 opacity-50 fe-skills" data-aos="zoom-out">
-                    <div class="row">
-                        <h3 class="text-decoration-underline fs-3 fw-bolder">FrontEnd</h3>
+    </div>
+
+
+    <div class="about-grid">
+
+        <div class="about-image">
+
+            <div class="profile-card">
+
+                <div class="profile-placeholder">
+
+                    <div class="profile-initial">
+                        <img src="Images/my.jpg" class=" img-fluid round1" alt="Manikandan G" style="position: absolute; width: 100%; margin-bottom: 35px;">
                     </div>
-                    <aside class="d-flex ms w-100 ">
-                        <div class="p-2 m-1 borde flex-grow-1 flex-md-grow-1 flex-sm-grow-1">
-                            <i class='bx bxl-html5 ' style="color: #c95d2c;"></i>
-                            <p class="d-inline">HTML</p>
-                        </div>
-                        <div class="p-2 m-1 borde flex-grow-1 flex-md-grow-1 flex-sm-grow-1">
-                            <i class='bx bxl-css3' style="color: #2595e5;"></i>
-                            <p class="d-inline">Css</p>
-                        </div>
-                        <div class="p-2 m-1 borde flex-grow-1 flex-md-grow-1 flex-sm-grow-1">
-                            <i class='bx bxl-javascript' style="color: #e9d928;"></i>
-                            <p class="d-inline">JavaScript</p>
-                        </div>
-                        <div class="p-2  m-1 borde flex-grow-1 flex-md-grow-1 flex-sm-grow-1">
-                            <i class='bx bxl-angular' style="color: #f3b311;"></i>
-                            <p class="d-inline">AngulatJS</p>
-                        </div>
-                        <div class="p-2 m-1 borde flex-grow-1 flex-md-grow-1 flex-sm-grow-1">
-                            <i class='bx bxl-react' style="color: #18afeb;"></i>
-                            <p class="d-inline">React</p>
-                        </div>
-                        <div class="p-2 m-1 borde flex-grow-1 flex-md-grow-1 flex-sm-grow-1">
-                            <i class=' bx bxl-bootstrap' style="color: #180595;"></i>
-                            <p class="d-inline">Bootstrap</p>
-                        </div>
-                        <div class="p-2 m-1 borde flex-grow-1 flex-md-grow-1 flex-sm-grow-1">
-                            <i class='bx bxl-tailwind-css' style="color: #f3b311;"></i>
-                            <p class="d-inline">Tailwind</p>
-                        </div>
-                    </aside>
+
                 </div>
 
-                <div class="col-11 col-lg-5 mt-5 fe-skills" data-aos="zoom-out-down">
-                    <div class="row">
-                        <h3 class="text-decoration-underline fs-3 fw-bolder">BackEnd</h3>
-                    </div>
-                    <aside class="d-flex ms w-100">
-                        <div class="p-2 m-1 borde flex-grow-1 flex-md-grow-1 flex-sm-grow-1">
-                            <i class='bx bxl-java d-inline' style="color: #f9f4f2;"></i>
-                            <p class="d-inline">Java</p>
-                        </div>
-                        <div class="p-2 m-1 borde flex-grow-1 flex-md-grow-1 flex-sm-grow-1">
-                            <i class='d-inline bx bxl-java' style="color: #6fb5e7;"></i>
-                            <p class="d-inline">J2EE</p>
-                        </div>
-                        <div class="p-2 m-1 borde flex-grow-1 flex-md-grow-1 flex-sm-grow-1">
-                            <i class='d-inline bx bxl-python' style="color: #e9d928;"></i>
-                            <p class="d-inline">Pyhton</p>
-                        </div>
-                        <div class="p-2 m-1 borde flex-grow-1 flex-md-grow-1 flex-sm-grow-1">
-                            <i class='d-inline bx bxl-spring-boot' style="color: #f3b311;"></i>
-                            <p class="d-inline">Spring Boot</p>
-                        </div>
-                        <div class="p-2 m-1 borde flex-grow-1 flex-md-grow-1 flex-sm-grow-1">
-                            <i class='d-inline bx bxs-data' style="color: #18afeb;"></i>
-                            <p class="d-inline">MS-SQL</p>
-                        </div>
-                        <div class="p-2 m-1 borde flex-grow-1 flex-md-grow-1 flex-sm-grow-1">
-                            <i class='d-inline bx pe-1' style="color: #180595;">.C</i>
-                            <p class="d-inline p">C#</p>
-                        </div>
-                        <div class="p-2 m-1 borde flex-grow-1 flex-md-grow-1 flex-sm-grow-1">
-                            <i class='bx bxl-tailwind-css' style="color: #f3b311;"></i>
-                            <p class="d-inline">ASP.Net</p>
-                        </div>
-                    </aside>
-                </div>
-            </div>
-            <div class="row w-100 align-self-center justify-content-center pe-lg-4 pb-5" data-aos="fade-zoom-in">
-                <div class="col-11 col-lg-6 align-items-center mt-3  fe-skills">
-                    <div class="row">
-                        <h3 class="text-decoration-underline fs-3 fw-bolder">Tools</h3>
-                    </div>
-                    <aside class="d-flex ms w-100 ">
-                        <div class="p-2 m-1 borde flex-grow-1 s flex-sm-grow-1 flex-md-grow-1">
-                            <i class='bx bx-code-block' style="color: #c95d2c;"></i>
-                            <p class="d-inline">Eclipse</p>
-                        </div>
-                        <div class="p-2 m-1 borde flex-grow-1 s flex-md-grow-1 flex-sm-grow-1">
-                            <i class='bx bxs-bug-alt' style="color: #c723cc;"></i>
-                            <p class="d-inline">Visual Studio code</p>
-                        </div>
-                        <div class="p-2 m-1 borde flex-grow-1 s lex-md-grow-1 flex-sm-grow-1">
-                            <i class='bx bx-cross' style="color: #e9d928;"></i>
-                            <p class="d-inline">Visual Studio 2022</p>
-                        </div>
-                        <div class="p-2  m-1 borde flex-grow-1 s flex-md-grow-1 flex-sm-grow-1">
-                            <i class='bx bxl-git' style="color: #f3b311;"></i>
-                            <p class="d-inline">Git</p>
-                        </div>
-                        <div class="p-2 m-1 borde flex-grow-1 s flex-md-grow-1 flex-sm-grow-1">
-                            <i class='bx bxl-github' style="color: #e29911;"></i>
-                            <p class="d-inline">GitHub</p>
-                        </div>
-                        <div class="p-2 m-1 borde flex-grow-1 s flex-md-grow-1 flex-sm-grow-1">
-                            <i class=' bx bxs-tree-alt' style="color: #d4e556;"></i>
-                            <p class="d-inline">Spring Tool</p>
-                        </div>
-                        <div class="p-2 m-1 borde flex-grow-1 s flex-md-grow-1 flex-sm-grow-1">
-                            <i class='bx bxl-tailwind-css' style="color: #f3b311;"></i>
-                            <p class="d-inline">Notepad++</p>
-                        </div>
-                    </aside>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Skill Page -->
+                <div class="profile-info">
 
-    <!-- About Start -->
-    <section class="py-5" id="About1">
-        <article class="container py-5">
-            <div class="row">
-                <h3 class="text-center ed my-5 fs-1 pb-3 fw-bolder">About Me</h3>
-                <div class="col-md-4 col-11">
-                    <img src="Images/my2.jpg" class="img-fluid mx-3 mx-md-0 my-4 round2 " alt="">
-                    <p class="w-100 x pt-4">
-                        I am a passionate software developer focused on building scalable web applications. I thrive on
-                        solving complex problems and love contributing to open-source projects. Always eager to learn
-                        and explore new technologies, I enjoy sharing insights with the developer community.
+                    <h3>Manikandan G</h3>
+
+                    <p>
+                        Associate Software Engineer
                     </p>
-                </div>
-                <!-- <div class="col">
 
-                </div> -->
-                <div class="col-11 col-md-7 m-auto m-md-0">
-                    <div class="ms-md-5 my-md-5 my-3 d-flex flex-column flex-xl-row d-lg-flex ">
-                        <img src="Images/mgr.jpeg" class="img-fluid rounded flex-grow-1 flex-md-grow-0" alt="">
-                        <p class="ps-xl-3 pt-3 pt-lg-0 m-md-0 pt-sm-0"><strong>Dr.MGR.Educational And Research
-                                Institute
-                            </strong> <br>
-                            Chennai. <br><br>
-                            <strong>CGPA :</strong>8.7 <br> PassedOut :<strong>2022-2024</strong><br> Degree :
-                            <strong>MCA</strong>
-                        </p>
-                    </div>
-                    <div class="ms-md-5 my-md-5 my-3 d-flex flex-column flex-xl-row d-lg-flex ">
-                        <img src="Images/egs.jpeg" class="img-fluid rounded flex-grow-1 flex-md-grow-0" alt="">
-                        <p class="ps-xl-3 pt-3 pt-lg-0 m-md-0 pt-sm-0"><strong>Edayathangudy G.S. Pillay Arts &
-                                Science College</strong> <br>
-                            Nagapattinam<br> <br>
-                            <strong>CGPA :</strong>8.5 <br> PassedOut :<strong>2019-2022</strong><br> Degree :
-                            <strong>BCA</strong>
-                        </p>
-                    </div>
-                    <div class="ms-md-5 my-md-5 my-3 d-flex flex-column flex-xl-row d-lg-flex ">
-                        <img src="Images/sch.jpeg" class="img-fluid rounded flex-grow-1 flex-md-grow-0" alt="">
-                        <p class="ps-xl-3 pt-3 pt-lg-0 m-md-0 pt-sm-0">Al-Aman Matric HR.Sec school <br>
-                            Sankaranpandhal <br><br>
-                            <strong>10th-(2017)
-                            </strong><br><strong> 12th-(2019)</strong>
-                    </div>
-                    <div class="ms-md-5 my-md-5 my-3 d-flex flex-column flex-xl-row d-lg-flex ">
-                        <img src="Images/acc.jpeg" class="img-fluid rounded flex-grow-1 flex-md-grow-0" alt="">
-                        <p class="ps-xl-3 pt-3 pt-lg-0 m-md-0 pt-sm-0">Accord Info Matrix <br>Chennai <br>
-                            <br><strong>--Java Full Stack
-                            </strong><br><strong>--DotNet Full Stack</strong>
-                    </div>
+                    <span>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Tamil Nadu, India
+                    </span>
+
                 </div>
+
             </div>
+
+        </div>
+
+
+        <div class="about-content">
+
+            <p class="lead-text">
+
+                I'm a software engineer who enjoys understanding
+                how systems work behind the scenes and turning
+                business requirements into practical software.
+
+            </p>
+
+
+            <p>
+
+                My professional experience has given me exposure to
+                enterprise applications, banking-domain workflows,
+                database integration and backend development.
+
+                I work primarily with Java and Spring technologies
+                and continuously improve my understanding of
+                Spring Boot, JPA, Hibernate, REST APIs and
+                database design.
+
+            </p>
+
+
+            <p>
+
+                I believe good software is not only about writing code.
+                It is about understanding the problem, designing the
+                right solution and making the system easier to maintain.
+
+            </p>
+
+
+            <div class="about-stats">
+
+                <div class="stat">
+
+                    <strong>1.5+</strong>
+
+                    <span>
+                        Years Experience
+                    </span>
+
+                </div>
+
+
+                <div class="stat">
+
+                    <strong>Java</strong>
+
+                    <span>
+                        Primary Language
+                    </span>
+
+                </div>
+
+
+                <div class="stat">
+
+                    <strong>Backend</strong>
+
+                    <span>
+                        Development Focus
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     EXPERIENCE
+========================================================= -->
+
+<section class="section section-dark" id="experience">
+
+    <div class="section-heading">
+
+        <span class="section-number">02</span>
+
+        <div>
+
+            <p class="section-label">
+                PROFESSIONAL EXPERIENCE
+            </p>
+
+            <h2>
+                Where I've
+                <span class="gradient-text">worked.</span>
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="experience-card">
+
+        <div class="experience-header">
+
+            <div>
+
+                <span class="experience-badge">
+                    CURRENT ROLE
+                </span>
+
+                <h3>
+                    Associate Software Engineer
+                </h3>
+
+                <p class="company-name">
+                    Software Engineering · Banking Domain
+                </p>
+
+            </div>
+
+
+            <div class="experience-date">
+                2025 — Present
+            </div>
+
+        </div>
+
+
+        <div class="experience-body">
+
+            <p>
+
+                Working on an enterprise audit application used
+                for banking audit workflows. My responsibilities
+                include implementing business requirements,
+                backend logic, database integration and
+                application enhancements.
+
+            </p>
+
+
+            <div class="work-highlights">
+
+                <div class="work-item">
+
+                    <div class="work-icon">
+                        <i class="fa-solid fa-coins"></i>
+                    </div>
+
+                    <div>
+
+                        <h4>
+                            High Value Gold Loan Audit
+                        </h4>
+
+                        <p>
+
+                            Developed interface functionality for
+                            identifying eligible high-value customer
+                            accounts and transferring them to branches
+                            for audit processing.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="work-item">
+
+                    <div class="work-icon">
+                        <i class="fa-solid fa-list-check"></i>
+                    </div>
+
+                    <div>
+
+                        <h4>
+                            Compliance Tracker
+                        </h4>
+
+                        <p>
+
+                            Worked on a module where Head Office users
+                            upload compliance items and assign them
+                            department-wise to branches and users.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="work-item">
+
+                    <div class="work-icon">
+                        <i class="fa-solid fa-building-columns"></i>
+                    </div>
+
+                    <div>
+
+                        <h4>
+                            Area Asset Centre Audit
+                        </h4>
+
+                        <p>
+
+                            Implemented monthly account and product
+                            mapping workflows with automated interface
+                            processing and audit eligibility logic.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="experience-stack">
+
+                <span>Java</span>
+                <span>Spring MVC</span>
+                <span>JSP</span>
+                <span>iBATIS</span>
+                <span>XML</span>
+                <span>jQuery</span>
+                <span>Ajax</span>
+                <span>SQL</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     SKILLS
+========================================================= -->
+
+<section class="section" id="skills">
+
+    <div class="section-heading">
+
+        <span class="section-number">03</span>
+
+        <div>
+
+            <p class="section-label">
+                TECHNICAL SKILLS
+            </p>
+
+            <h2>
+                My engineering
+                <span class="gradient-text">toolkit.</span>
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="skills-grid">
+
+
+        <div class="skill-category">
+
+            <div class="skill-category-title">
+
+                <i class="fa-brands fa-java"></i>
+
+                <h3>
+                    Programming
+                </h3>
+
+            </div>
+
+            <div class="skill-list">
+
+                <span class="skill-tag featured">Java</span>
+                <span class="skill-tag">Java 8+</span>
+                <span class="skill-tag">OOP</span>
+                <span class="skill-tag">Collections</span>
+                <span class="skill-tag">Streams</span>
+                <span class="skill-tag">Multithreading</span>
+
+            </div>
+
+        </div>
+
+
+        <div class="skill-category">
+
+            <div class="skill-category-title">
+
+                <i class="fa-solid fa-server"></i>
+
+                <h3>
+                    Backend
+                </h3>
+
+            </div>
+
+            <div class="skill-list">
+
+                <span class="skill-tag featured">Spring</span>
+                <span class="skill-tag featured">Spring Boot</span>
+                <span class="skill-tag">Spring MVC</span>
+                <span class="skill-tag">REST API</span>
+                <span class="skill-tag">JPA</span>
+                <span class="skill-tag">Hibernate</span>
+
+            </div>
+
+        </div>
+
+
+        <div class="skill-category">
+
+            <div class="skill-category-title">
+
+                <i class="fa-solid fa-database"></i>
+
+                <h3>
+                    Database
+                </h3>
+
+            </div>
+
+            <div class="skill-list">
+
+                <span class="skill-tag featured">MySQL</span>
+                <span class="skill-tag featured">Oracle</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">JDBC</span>
+                <span class="skill-tag">Database Design</span>
+
+            </div>
+
+        </div>
+
+
+        <div class="skill-category">
+
+            <div class="skill-category-title">
+
+                <i class="fa-solid fa-code"></i>
+
+                <h3>
+                    Frontend
+                </h3>
+
+            </div>
+
+            <div class="skill-list">
+
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">JSP</span>
+                <span class="skill-tag">jQuery</span>
+                <span class="skill-tag">Ajax</span>
+
+            </div>
+
+        </div>
+
+
+        <div class="skill-category">
+
+            <div class="skill-category-title">
+
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+
+                <h3>
+                    Tools
+                </h3>
+
+            </div>
+
+            <div class="skill-list">
+
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">GitHub</span>
+                <span class="skill-tag">Maven</span>
+                <span class="skill-tag">Postman</span>
+                <span class="skill-tag">IntelliJ IDEA</span>
+                <span class="skill-tag">VS Code</span>
+
+            </div>
+
+        </div>
+
+
+        <div class="skill-category">
+
+            <div class="skill-category-title">
+
+                <i class="fa-solid fa-lightbulb"></i>
+
+                <h3>
+                    Concepts
+                </h3>
+
+            </div>
+
+            <div class="skill-list">
+
+                <span class="skill-tag">DSA</span>
+                <span class="skill-tag">SOLID</span>
+                <span class="skill-tag">Design Patterns</span>
+                <span class="skill-tag">MVC</span>
+                <span class="skill-tag">REST Architecture</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     PROJECTS
+========================================================= -->
+
+<section class="section section-dark" id="projects">
+
+    <div class="section-heading">
+
+        <span class="section-number">04</span>
+
+        <div>
+
+            <p class="section-label">
+                SELECTED WORK
+            </p>
+
+            <h2>
+                Things I've
+                <span class="gradient-text">built.</span>
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="projects-grid">
+
+
+        <!-- PROJECT 1 -->
+
+        <article class="project-card">
+
+            <div class="project-number">
+                01
+            </div>
+
+            <div class="project-icon large">
+                <i class="fa-solid fa-wallet"></i>
+            </div>
+
+            <h3>
+                Personal Finance Manager
+            </h3>
+
+            <p>
+
+                A finance management application designed to
+                track daily expenses, income and financial
+                activities through a structured backend system.
+
+            </p>
+
+            <div class="project-tech">
+
+                <span>Java</span>
+                <span>Spring Boot</span>
+                <span>Oracle</span>
+                <span>React</span>
+
+            </div>
+
+            <div class="project-links">
+
+                <a href="https://github.com/Manikandang10" class="project-link">
+                    <i class="fa-brands fa-github"></i>
+                    GitHub
+                </a>
+
+                <a href="#" class="project-link">
+                    Live Demo
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+
+            </div>
+
         </article>
-    </section>
-    <!-- About End -->
 
-    <!-- Project Start -->
-    <section class="py-4" id="Project1">
-        <div class="container">
-            <h2 class="text-center pb-3 fs-1 fw-bolder text-danger ed">Projects</h2>
-            <article class="row justify-content-center mt-5 justify-content-md-center">
-                <div class="col-10 col-md-5 col-lg-3 hov" data-aos="zoom-out-right">
-                    <div class="card ch">
-                        <img src="Images/sp.png" class="img-fluid rounded" alt="">
-                        <p class="mt-2 mx-2"><span class="mx-1 px-2  rounded text-white p-1 ht">HTML</span> <span
-                                class="mx-1 px-2 rounded text-white p-1 cs">CSS</span></p>
-                        <div class="card-body p">
-                            <div class="card-title tit">Spices Shop</div>
-                            <p class="text-justify">A spice shop website using only HTML and CSS is a simple static
-                                webpage
-                                HTML is used for structuring the content.Included
-                                since HTML and CSS are used,making it ideal for beginners learning web design
-                                basics.
-                            </p>
-                            <a href="" class="text-danger link">Link..</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-10 col-md-5 col-lg-3 hov" data-aos="zoom-out-down">
-                    <div class="card ch">
-                        <img src="Images/bus.jpeg" class="img-fluid rounded" alt="">
-                        <p class="mt-2 mx-2"><span class="mx-1 px-2 rounded text-white p-1 ja">Java</span> <span
-                                class="mx-1 px-2 rounded text-white p-1 ms1">Mysql</span></p>
-                        <div class="card-body p">
-                            <div class="card-title tit">Bus Reservation </div>
-                            <p>A bus reservation system in the console allows users to book seats on a bus. Users enter
-                                details like name, choose a bus, pick their seat, and confirm the booking. It displays
-                                available buses, seats, and provides booking status.
-                                <br>
-                            </p>
-                            <a href="" class="text-danger link">Link..</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-10 col-md-5 col-lg-3 hov" data-aos="zoom-out-up">
-                    <div class="card ch">
-                        <img src="Images/new.png" class="img-fluid rounded" alt="">
-                        <p class="mt-2 mx-2"><span class="mx-1 p-1 px-2  rounded text-white ht">HTML</span> <span
-                                class="mx-1 p-1 px-2 rounded text-white cs">CSS</span><span
-                                class="mx-1 px-2 bg-primary rounded text-white p-1 b ">Bootstrap</span><span
-                                class="mx-1 px-2 rounded text-white p-1 ja">JavaScript</span></p>
-                        <div class="card-body p">
-                            <div class="card-title tit">Presonal Portfoli</div>
-                            <p>This website is fully developed using HTML, JavaScript, CSS, and Bootstrap. It is a
-                                dynamic,
-                                fully responsive design that provides information about me and my journey. <br><br><br>
-                            </p>
-                            <a href="" class="text-danger link">Link..</a>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        </div>
-    </section>
-    <!-- End Project  -->
 
-    <!-- Start Contact Form -->
-    <section>
-        <div class="container">
-            <article class="row justify-content-md-center  justify-content-center py-5">
-                <h1 class=" my-5 text-center fw-bolder ed text-danger">Contact Me</h1>
-                <aside class="col-10 col-lg-5 mt-0 bg-whit">
-                    <div class="page">
-                        <div class=" linked" data-aos="zoom-in-left" data-aos-delay="200">
-                            <a href=""><i class='bx bxl-instagram'></i></a>
-                            <p class="d-inline">Instagram</p>
-                        </div>
-                        <div class="linked" data-aos="zoom-in-right" data-aos-delay="200">
-                            <a href=""><i class='bx bxl-gmail'></i></a>
-                            <p class="d-inline">Email</p>
-                        </div>
-                        <div class="linked" data-aos="zoom-in-left"data-aos-delay="200">
-                            <a href=""><i class='bx bxl-facebook'></i></a>
-                            <p class="d-inline">FaceBook</p>
-                        </div>
-                        <div class="linked" data-aos="zoom-in-right"data-aos-delay="200">
-                            <a href=""><i class='bx bxl-linkedin'></i></a>
-                            <p class="d-inline">LinkedIn</p>
-                        </div>
-                        <div class="linked" data-aos="zoom-in-left"data-aos-delay="200">
-                            <a href=""><i class='bx bx-chat'></i></a>
-                            <p class="d-inline">Naukri</p>
-                        </div>
-                        <div class="linked" data-aos="zoom-in-right"data-aos-delay="200">
-                            <a href=""><i class='bx bxl-github'></i></a>
-                            <p class="d-inline">GitHub</p>
-                        </div>
-                    </div>
-                </aside>
-                <aside class=" col-lg-5 col-10 mt-4 bg-white rounded"  id="contac1" data-aos="fade-down"
-                data-aos-duration="1000">
-                    <div class=" page2" >
-                    <form onsubmit="return submit()" >
-                        <p>
-                            <label for="fn1" class="form-label">FirstName<span class="start">*</span></label>
-                            <input type="text" class="form-control" onkeyup="first()" name="" id="fn1">
-                            <span id="form-firstname" class="formspan"></span>
-                        </p>
-                        <p>
-                            <label for="ln1" class="form-label">LastName<span class="start">*</span></label>
-                            <input type="text" class="form-control" onkeyup="last()" id="ln1">
-                            <span id="form-lastname" class="formspan"></span>
-                        </p>
-                        <p>
-                            <label for="en1" class="form-label">Email<span class="start">*</span></label>
-                            <input type="email" class="form-control" onkeyup="email()" id="en1">
-                            <span id="form-Email" class="formspan"></span>
-                        </p>
-                        <p>
-                            <label for="sub1" class="form-label">Subject<span class="start">*</span></label>
-                            <input type="text" class="form-control" onkeyup="subject()" id="sub1">
-                            <span id="form-subject" class="formspan"></span>
-                        </p>
-                        <p>
-                            <label for="txt" class="form-label">Message<span class="start"></span></label>
-                            <textarea id="txt" class="form-control" id="msg" onkeyup="msg()"></textarea>
-                            <span id="form-msg" class="formspan"></span>
-                        </p>
-                        <button class="btn btn-primary">Submit</button>
-                    </form>
-        </div>
-        </aside>
+
+        <!-- PROJECT 2 -->
+
+        <article class="project-card">
+
+            <div class="project-number">
+                02
+            </div>
+
+            <div class="project-icon large">
+                <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+
+            <h3>
+                Student Management System
+            </h3>
+
+            <p>
+
+                A web application for managing student information,
+                courses and academic records with a Spring Boot
+                backend and server-side rendered interface.
+
+            </p>
+
+            <div class="project-tech">
+
+                <span>Java</span>
+                <span>Spring Boot</span>
+                <span>Thymeleaf</span>
+                <span>MySQL</span>
+
+            </div>
+
+            <div class="project-links">
+
+                <a href="https://github.com/Manikandang10" class="project-link">
+                    <i class="fa-brands fa-github"></i>
+                    GitHub
+                </a>
+
+                <a href="#" class="project-link">
+                    Live Demo
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+
+            </div>
+
         </article>
-        </div>
-    </section>
-    <!-- End Contact Form -->
 
-    <!-- Footer Start -->
-    <footer class="p-2">
-        <div class="col">
-            <h4><span> &copy </span>Copyright-2024</h4>
+
+
+        <!-- PROJECT 3 -->
+
+        <article class="project-card">
+
+            <div class="project-number">
+                03
+            </div>
+
+            <div class="project-icon large">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+
+            <h3>
+                E-Commerce Application
+            </h3>
+
+            <p>
+
+                A role-based e-commerce application with
+                product, category and user management,
+                designed using REST APIs and a modern frontend.
+
+            </p>
+
+            <div class="project-tech">
+
+                <span>Spring Boot</span>
+                <span>JPA</span>
+                <span>MySQL</span>
+                <span>Angular</span>
+
+            </div>
+
+            <div class="project-links">
+
+                <a href="https://github.com/Manikandang10" class="project-link">
+                    <i class="fa-brands fa-github"></i>
+                    GitHub
+                </a>
+
+                <a href="#" class="project-link">
+                    Architecture
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     LEARNING / APPROACH
+========================================================= -->
+
+<section class="section">
+
+    <div class="learning-box">
+
+        <div class="learning-content">
+
+            <span class="section-label">
+                CURRENTLY LEARNING
+            </span>
+
+            <h2>
+                Always becoming
+                <span class="gradient-text">better.</span>
+            </h2>
+
+            <p>
+
+                I'm currently deepening my knowledge of
+                Spring Boot, JPA/Hibernate, REST API design,
+                authentication, database optimization and
+                scalable backend architecture.
+
+            </p>
+
         </div>
-    </footer>
-    <!-- Footer End -->
+
+
+        <div class="learning-stack">
+
+            <div>
+                <i class="fa-solid fa-leaf"></i>
+                Spring Boot
+            </div>
+
+            <div>
+                <i class="fa-solid fa-database"></i>
+                JPA / Hibernate
+            </div>
+
+            <div>
+                <i class="fa-solid fa-shield-halved"></i>
+                Security
+            </div>
+
+            <div>
+                <i class="fa-solid fa-network-wired"></i>
+                System Design
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     CONTACT
+========================================================= -->
+
+<section class="section section-dark" id="contact">
+
+    <div class="contact-container">
+
+        <div class="contact-left">
+
+            <span class="section-label">
+                HAVE A PROJECT?
+            </span>
+
+            <h2>
+                Let's build something
+                <span class="gradient-text">
+                    meaningful.
+                </span>
+            </h2>
+
+            <p>
+
+                I'm always interested in discussing software
+                development, backend engineering, projects
+                and new opportunities.
+
+            </p>
+
+            <a href="mailto:manikandang.sde@gmail.com"
+               class="email-link">
+
+                manikandang.sde@gmail.com
+
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            </a>
+
+        </div>
+
+
+        <div class="contact-right">
+
+            <div class="contact-card">
+
+                <span class="contact-label">
+                    CONNECT
+                </span>
+
+                <a href="https://github.com/Manikandang10"
+                   target="_blank"
+                   class="contact-row">
+
+                    <span>
+
+                        <i class="fa-brands fa-github"></i>
+
+                        GitHub
+
+                    </span>
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+
+                <a href="https://www.linkedin.com/in/manikandan-sde"
+                   target="_blank"
+                   class="contact-row">
+
+                    <span>
+
+                        <i class="fa-brands fa-linkedin"></i>
+
+                        LinkedIn
+
+                    </span>
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+
+                <a href="mailto:manikandang.sde@gmail.com"
+                   class="contact-row">
+
+                    <span>
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                        Email
+
+                    </span>
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+    <div class="footer-inner">
+
+        <div class="footer-logo">
+            &lt;MG/&gt;
+        </div>
+
+        <p>
+            Designed & built by Manikandan.
+        </p>
+
+        <p>
+            © <span id="year"></span> All rights reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<!-- Back to top -->
+
+<button id="backTop" class="back-top">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+
+<script src="js/script.js"></script>
 
 </body>
-<script src="Js/main.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-</script>
 </html>
+
