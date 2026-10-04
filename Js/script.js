@@ -2,7 +2,9 @@
 /* =========================================================
    MOBILE MENU
 ========================================================= */
-
+window.addEventListener("load", function () {
+    console.log("Page loaded/reloaded");
+});
 const menuBtn = document.getElementById("menuBtn");
 const navMenu = document.getElementById("navMenu");
 
